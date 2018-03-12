@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 "set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "let path = '~/some/path/here'
@@ -17,7 +17,8 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'wilywampa/vim-ipython'
 Plugin 'tpope/vim-fugitive'
 Plugin 'nvie/vim-flake8'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
+Plugin 'ryanoasis/vim-devicons'
 call vundle#end()
 filetype plugin indent on
 
