@@ -130,5 +130,5 @@ let g:jedi#popup_on_dot = 0
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
-
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 set guicursor=
