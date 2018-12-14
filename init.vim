@@ -14,6 +14,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'Shougo/deoplete.nvim'
 Plugin 'wilywampa/vim-ipython'
 Plugin 'tpope/vim-fugitive'
 Plugin 'nvie/vim-flake8'
@@ -125,10 +126,11 @@ set relativenumber
 set number
 map <C-n> :NERDTreeToggle<CR>
 
-let g:jedi#popup_on_dot = 0
-
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 set guicursor=
+let g:python3_host_prog = '/home/mboos/anaconda/envs/pyneovim/bin/python'
+let g:python_host_prog = '/home/mboos/anaconda/envs/pyneovim2/bin/python'
+let g:deoplete#enable_at_startup = 1
