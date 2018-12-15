@@ -126,7 +126,11 @@ autocmd FileType python match OverLength /\%81v.\+/
 set relativenumber
 set number
 map <C-n> :NERDTreeToggle<CR>
-
+set expandtab
+set tabstop=4           " use 4 spaces to represent tab
+set softtabstop=4
+set shiftwidth=4        " number of spaces to use for auto indent
+set autoindent          " copy indent from current line when starting a new line
 set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
