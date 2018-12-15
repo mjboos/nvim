@@ -17,6 +17,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'w0rp/ale'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Shougo/deoplete.nvim', {'do' : ':UpdateRemotePlugins'}
+Plugin 'zchee/deoplete-jedi'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
