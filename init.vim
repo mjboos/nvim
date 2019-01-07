@@ -140,3 +140,4 @@ set guicursor=
 let g:python3_host_prog = '/home/mboos/anaconda/envs/pyneovim/bin/python'
 let g:python_host_prog = '/home/mboos/anaconda/envs/pyneovim2/bin/python'
 let g:deoplete#enable_at_startup = 1
+let g:tex_conceal = ""
