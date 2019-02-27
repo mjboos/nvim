@@ -38,6 +38,7 @@ set t_Co=16
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+let mapleader="-"
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -122,8 +123,17 @@ autocmd FileType tex,mp,rst,python set autowrite
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
-highlight OverLength ctermbg=red ctermfg=white
-autocmd FileType python match OverLength /\%81v.\+/
+let s:activatedh = 0 
+function! ToggleH()
+    if s:activatedh == 0
+        let s:activatedh = 1 
+        match Search '\%>81v.\+'
+    else
+        let s:activatedh = 0 
+        match none
+    endif
+endfunction
+nnoremap <leader>1 :call ToggleH()<CR>
 set relativenumber
 set number
 map <C-n> :NERDTreeToggle<CR>
@@ -137,7 +147,7 @@ set foldlevel=99
 nnoremap <space> za
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 set guicursor=
-let g:python3_host_prog = '/home/mboos/anaconda/envs/pyneovim/bin/python'
-let g:python_host_prog = '/home/mboos/anaconda/envs/pyneovim2/bin/python'
+let g:python3_host_prog = '/home/mboos/anaconda2/envs/pyneovim/bin/python'
+let g:python_host_prog = '/home/mboos/anaconda2/envs/pyneovim2/bin/python'
 let g:deoplete#enable_at_startup = 1
 let g:tex_conceal = ""
