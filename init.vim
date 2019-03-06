@@ -35,9 +35,6 @@ if v:progname =~? "evim"
 endif
 
 set t_Co=16
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
 
 let mapleader="-"
 " allow backspacing over everything in insert mode
