@@ -22,6 +22,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'Yggdroot/indentLine'
+Plugin 'bfredl/nvim-ipy'
 call vundle#end()
 filetype plugin indent on
 
