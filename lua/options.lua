@@ -28,3 +28,8 @@ opt.autoindent = true
 -- Folding
 opt.foldmethod = "indent"
 opt.foldlevel = 99
+
+
+vim.opt.clipboard = "unnamedplus"
+
+
